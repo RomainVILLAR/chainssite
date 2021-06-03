@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="aa40af5d-8f76-484f-98f6-4cce1da47b22" name="chainssite" url="https://github.com/RomainVILLAR/chainssite.git">
+        <fileTransfer host="https://github.com/RomainVILLAR/chainssite.git" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
