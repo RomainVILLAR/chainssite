@@ -1,0 +1,42 @@
+[
+  {
+    "id_profil": 1,
+    "photo_profil": "img/exemple/exemple_pp.jpg",
+    "pseudo": "Romain_VLR",
+    "abonnements": "45",
+    "abonnes": "26",
+    "date_naissance": "24.06.2002",
+    "mdp": "csecret",
+    "identifiant": "romainvillar"
+  },
+  {
+    "id_profil": 2,
+    "photo_profil": "img/exemple/exemple_pp.jpg",
+    "pseudo": "Gabi",
+    "abonnements": "120",
+    "abonnes": "111",
+    "date_naissance": "01.08.2001",
+    "mdp": "azertyui",
+    "identifiant": "gab.scribot"
+  },
+  {
+    "id_profil": 3,
+    "photo_profil": "img/exemple/exemple_pp.jpg",
+    "pseudo": "Pacpac",
+    "abonnements": "98",
+    "abonnes": "67",
+    "date_naissance": "25.02.2001",
+    "mdp": "mercedes123",
+    "identifiant": "pacomevouriot"
+  },
+  {
+    "id_profil": 4,
+    "photo_profil": "img/exemple/exemple_pp.jpg",
+    "pseudo": "lulu25",
+    "abonnements": "14",
+    "abonnes": "5",
+    "date_naissance": "30.05.2001",
+    "mdp": "lulubg123",
+    "identifiant": "lulu.verove"
+  }
+]

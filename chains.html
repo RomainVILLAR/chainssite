@@ -1,0 +1,147 @@
+<html lang=fr>
+    <head>
+        <meta charset="utf-8">
+        <title>Chains</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/mycss/style.css">
+
+
+        <!-- JQuery Avant Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+        <!-- vuejs -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+
+        <!-- vue router -->
+        <script src="https://unpkg.com/vue-router"></script>
+        
+        <!-- axios pour ajax -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+        <!-- Font-awesome -->            
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+        
+    </head>
+
+    <body>
+        <div id="app">
+            <header>
+                <nav id="menu-bar">
+                    <ul>
+
+                    <li>
+                            <router-link id="home-button" :to="{name:'Home'}">
+                                Home
+                            </router-link>
+                    </li>
+
+                    <li>
+                            <router-link id="recherche-button" :to="{name:'Recherche'}">
+                                Recherche
+                            </router-link>
+                    </li>
+                    
+                    <li>
+                            <router-link id="tendances-button" :to="{name:'Tendances'}">
+                                Tendances
+                            </router-link>
+                    </li>
+
+                    <li>
+                            <router-link id="messages-button" :to="{name:'Messages'}">
+                                Messages
+                            </router-link>
+                    </li>
+
+                    <li>
+                            <router-link id="profil-button" :to="{name:'Profil'}">
+                                Profil
+                            </router-link>
+                    </li>
+                    </ul>
+                </nav>
+
+                <div id="top-bar">
+                <div>
+                        <a href="#" id="return-button" onclick="javascript:history.go(-1);">
+                            Retour
+                        </a>
+                        <router-link id="logo-button" :to="{name:'Editeur'}">
+                            Editeur
+                        </router-link>
+                        <router-link id="option-button" :to="{name:'Parametre'}">
+                            Parametre
+                        </router-link>
+                </div>
+                
+                </div>
+            </header>
+
+
+            <main>
+
+                
+
+
+
+
+
+
+
+            <!-- point d insertion des composants template -->
+            <router-view></router-view>
+
+
+            </main>
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+        <!-- les composants utilisés -->
+        <script src="pages/home.vue.js"></script>
+        <script src="pages/recherche.vue.js"></script>
+        <script src="pages/tendances.vue.js"></script>
+        <script src="pages/messages.vue.js"></script>
+        <script src="pages/profil.vue.js"></script>
+        <script src="pages/editeur.vue.js"></script>
+        <script src="pages/parametre.vue.js"></script>
+
+
+        <script>
+            // Les routages / navigation de l'application
+            var routes = [
+                {path: '/',				name:"Home",		component:Home},
+                {path: '/recherche',	name:"Recherche",	component:Recherche},
+                {path: '/tendances',	name:"Tendances",	component:Tendances},
+                {path: '/messages',	    name:"Messages",	component:Messages},
+                {path: '/profil',	    name:"Profil",	    component:Profil},
+                {path: '/parametre',	name:"Parametre",	component:Parametre},
+                {path: '/edieur',	    name:"Editeur",	    component:Editeur},
+
+            ]
+    
+            // Initialisation du router
+            var router = new VueRouter(
+                {routes: routes}
+            )
+            // La vue de l'application (id="app")
+            var app = new Vue({
+                el:"#app",
+                router:router
+            })
+        </script>
+    </body>
+
+
+
+
+</html>

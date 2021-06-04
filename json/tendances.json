@@ -1,0 +1,73 @@
+[
+    
+
+    {
+        "id_publication": 1,
+        "description": "C'est tellement vrai mdrrrr",
+        "contenu": "img/exemple/illustration_article_meme4.jpg",
+        "nombre_like": "159",
+        "nombre_commentaires": "52",
+        "nombre_chains": "26",
+        "chains_de": "fancis200",
+        "photo_profil": "img/exemple/exemple_pp.jpg",
+        "identifiant": "lejos25",
+        "pseudo": "J.O.S",
+        "date" : "05/01/2021"
+    
+      }
+    
+    
+    
+    ,
+
+    {
+        "id_publication": 2        ,
+        "description": "Ajoute moi moi si ca vous a plu !",
+        "contenu": "img/exemple/illustration_article_meme.jpg",
+        "nombre_like": "256",
+        "nombre_commentaires": "51",
+        "nombre_chains": "18",
+        "chains_de": "clementvuit",
+        "photo_profil": "img/exemple/exemple_pp.jpg",
+        "identifiant": "@romainvillar",
+        "pseudo": "Romain_VLR",
+        "date" : "12/06/2021"
+    
+      },
+
+
+
+
+    {
+      "id_publication": 3,
+      "description": "Je sais pas trop quoi mettre comme description",
+      "contenu": "img/exemple/illustration_article_meme3.jpg",
+      "nombre_like": "354",
+      "nombre_commentaires": "127",
+      "nombre_chains": "50",
+      "chains_de": "jlmelenchon",
+      "photo_profil": "img/exemple/exemple_pp3.jpg",
+      "identifiant": "@ouicestmoi",
+      "pseudo": "Cencoremoi",
+      "date" : "28/01/2021"
+  
+    },
+
+
+    {
+        "id_publication": 4,
+        "description": "Dites moi en commentaire ce que vous en penser !!",
+        "contenu": "img/exemple/illustration_article_meme2.png",
+        "nombre_like": "89",
+        "nombre_commentaires": "14",
+        "nombre_chains": "8",
+        "chains_de": "Pierre25",
+        "photo_profil": "img/exemple/exemple_pp2.jpg",
+        "identifiant": "@gabi25",
+        "pseudo": "Gabi",
+        "date" : "02/04/2021"
+      }
+      
+      
+    
+  ]

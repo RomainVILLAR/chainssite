@@ -530,3 +530,33 @@ div.profil-media span {
     margin: 15px;
     font-weight: bold;
 }
+
+
+
+
+
+
+
+div.publier {
+    width: 100%;
+}
+
+
+div.publier textarea {
+    width: 100%;
+    min-height: 200px;
+    margin: 20px 0;
+
+}
+
+div.addicon {
+    width: 40px;
+    height: 40px;
+}
+
+div.addicon img {
+    width: max-content;
+    height: auto;
+}
+
+

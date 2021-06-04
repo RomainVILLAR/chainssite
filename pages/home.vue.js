@@ -1,38 +1,38 @@
 var Home = Vue.component('Home',{
     template:
-    `
-                    <div class="publication">
+    `               <div>
+                    <div v-for="publication in PublicationListe" :key="publication.id" class="publication">
                     <div class="entete-div">
-                        <img class="pp-user" src="img/exemple/exemple pp.jpg" alt="">
-                        <span class="pseudo-user">lejos79865</span>
-                        <span class="id-user">@lejos79865</span>
+                        <img class="pp-user" v-bind:src="publication.photo_profil" alt="">
+                        <span class="pseudo-user">{{publication.pseudo}}</span>
+                        <span class="id-user">{{publication.identifiant}}</span>
                     </div>
                     <div class="description-div">
                         <p class="description">
-                            Suivez-moi pour d'autres memes marrants ! --------- > lejos79865
+                            {{publication.description}}
                         </p>
                     </div>
                     <div class="image-div">
-                        <img class="image-publication" src="img/exemple/illustration_article_meme.jpg" alt="">
+                        <img class="image-publication" v-bind:src="publication.contenu" alt="">
                     </div>
                     <div class="infos-div">
-                        <span class="mylink-from"> de @jmelanchon</span>
-                        <span class="date-publication">10 min</span>
+                        <span class="mylink-from"> de @{{publication.chains_de}}</span>
+                        <span class="date-publication">{{publication.date}}</span>
                     </div>
                     <div class="action-div">
                         <div class="action-contener">
                             <a class="like-publication" href="">Like</a>
-                            <span class="nb-like">192</span>
+                            <span class="nb-like">{{publication.nombre_like}}</span>
                         </div>
 
                         <div class="action-contener">
                             <a class="commentaire-publication" href="">Commentaire</a>
-                            <span class="nb-commentaire">493</span>
+                            <span class="nb-commentaire">{{publication.nombre_commentaires}}</span>
                         </div>
 
                         <div class="action-contener">
                             <a class="mylink-publication" href="">Mylink</a>
-                            <span class="nb-link">54</span>
+                            <span class="nb-link">{{publication.nombre_chains}}</span>
                         </div>
 
                         <div class="action-contener">
@@ -41,24 +41,27 @@ var Home = Vue.component('Home',{
                         
                     </div>
                 </div>
+                </div>
 
     
     
     `,
 
-    
-    data(){
-        return{
+    data() {
+        return {
+            PublicationListe: []
 
         }
     },
-
-    mounted(){
-
+    mounted() {
+        axios.get('json/publication.json')
+            .then(response => {
+                this.PublicationListe = response.data;
+                console.log("PublicationListe", this.PublicationListe);
+            })
+            .catch(function (error){
+                console.log(error)
+            })
     },
-
-    methods:{
-
-    }
-
-})
+    methods: {}
+});

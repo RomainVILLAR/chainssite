@@ -4,7 +4,7 @@ var Profil = Vue.component('Profil',{
     <div class="profil-app">
                     <div class="profil-div">
                         <div class="profil-entete">
-                            <img class="profil-pp" src="img/exemple/exemple pp.jpg" alt="">
+                            <img class="profil-pp" src="img/exemple/exemple_pp.jpg" alt="">
                             <div class="profil-info-compte">
                                 <span class="pseudo-user">lejos79865</span>
                                 <span class="id-user">@lejos79865</span>
@@ -25,7 +25,7 @@ var Profil = Vue.component('Profil',{
 
                     <div class="publication">
                         <div class="entete-div">
-                            <img class="pp-user" src="img/exemple/exemple pp.jpg" alt="">
+                            <img class="pp-user" src="img/exemple/exemple_pp.jpg" alt="">
                             <span class="pseudo-user">lejos79865</span>
                             <span class="id-user">@lejos79865</span>
                         </div>

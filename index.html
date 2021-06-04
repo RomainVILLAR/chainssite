@@ -3,7 +3,7 @@
         <meta charset="utf-8">
         <title>Chains</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/mycss/style.css">
+        <link rel="stylesheet" href="css/mycss/style.login.css">
 
 
         <!-- JQuery Avant Bootstrap -->
@@ -26,110 +26,36 @@
 
     <body>
         <div id="app">
-            <header>
-                <nav id="menu-bar">
-                    <ul>
-
-                    <li>
-                            <router-link id="home-button" :to="{name:'Home'}">
-                                Home
-                            </router-link>
-                    </li>
-
-                    <li>
-                            <router-link id="recherche-button" :to="{name:'Recherche'}">
-                                Recherche
-                            </router-link>
-                    </li>
-                    
-                    <li>
-                            <router-link id="tendances-button" :to="{name:'Tendances'}">
-                                Tendances
-                            </router-link>
-                    </li>
-
-                    <li>
-                            <router-link id="messages-button" :to="{name:'Messages'}">
-                                Messages
-                            </router-link>
-                    </li>
-
-                    <li>
-                            <router-link id="profil-button" :to="{name:'Profil'}">
-                                Profil
-                            </router-link>
-                    </li>
-                    </ul>
-                </nav>
-
-                <div id="top-bar">
-                <div>
-                        <router-link id="return-button" :to="{name:'Editeur'}">
-                            Editeur
-                        </router-link>
-                        <router-link id="logo-button" :to="{name:'Editeur'}">
-                            Editeur
-                        </router-link>
-                        <router-link id="option-button" :to="{name:'Parametre'}">
-                            Parametre
-                        </router-link>
-                </div>
-                
-                </div>
-            </header>
 
 
-            <main>
-
-                
+   <!-- point d insertion des composants template -->
+   <router-view></router-view>
 
 
 
 
-
-
-
-
-            <!-- point d insertion des composants template -->
-            <router-view></router-view>
-
-
-            </main>
-
-
-
-
-
-
-
-
-
-        </div>
-
+            </div>
 
         <!-- les composants utilisés -->
-        <script src="pages/home.vue.js"></script>
-        <script src="pages/recherche.vue.js"></script>
-        <script src="pages/tendances.vue.js"></script>
-        <script src="pages/messages.vue.js"></script>
-        <script src="pages/profil.vue.js"></script>
-        <script src="pages/editeur.vue.js"></script>
-        <script src="pages/parametre.vue.js"></script>
+        <script src="pages/pages.login/connexionchoix.vue.js"></script>
+        <script src="pages/pages.login/connexion.vue.js"></script>
+        <script src="pages/pages.login/inscription.vue.js"></script>
+        <script src="pages/pages.login/inscriptionchoix.vue.js"></script>
+
 
 
         <script>
             // Les routages / navigation de l'application
+
             var routes = [
-                {path: '/',				name:"Home",		component:Home},
-                {path: '/recherche',	name:"Recherche",	component:Recherche},
-                {path: '/tendances',	name:"Tendances",	component:Tendances},
-                {path: '/messages',	    name:"Messages",	component:Messages},
-                {path: '/profil',	    name:"Profil",	    component:Profil},
-                {path: '/parametre',	name:"Parametre",	component:Parametre},
-                {path: '/edieur',	    name:"Editeur",	    component:Editeur},
+                {path: '/',				    name:"InscriptionChoix",		component:InscriptionChoix},
+                {path: '/inscription',	    name:"Inscription",	            component:Inscription},
+                {path: '/connexionchoix',	name:"ConnexionChoix",	        component:ConnexionChoix},
+                {path: '/connexion',	    name:"Connexion",	            component:Connexion},
+
 
             ]
-    
+
             // Initialisation du router
             var router = new VueRouter(
                 {routes: routes}
@@ -140,6 +66,9 @@
                 router:router
             })
         </script>
+
+
+
     </body>
 
 
